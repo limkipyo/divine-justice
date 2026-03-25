@@ -287,6 +287,62 @@ footer {
 .reveal-delay-3 { transition-delay:0.4s; }
 .reveal-delay-4 { transition-delay:0.55s; }
 .reveal-delay-5 { transition-delay:0.7s; }
+
+/* ===== RESPONSIVE: MOBILE ===== */
+@media (max-width: 768px) {
+  /* 커스텀 커서 숨김 */
+  .cursor, .cursor-ring { display:none; }
+  body { cursor:auto; }
+  .cta-btn { cursor:pointer; }
+
+  /* Nav */
+  nav { padding:14px 20px; }
+  .nav-logo { font-size:15px; letter-spacing:2px; }
+  .nav-links { gap:16px; }
+  .nav-links a { font-size:10px; letter-spacing:1px; }
+
+  /* Section 1: Justice */
+  #justice { flex-direction:column; align-items:flex-start; height:auto; min-height:100vh; padding-top:70px; }
+  .hero-photo { position:relative; right:auto; width:100%; height:45vw; min-height:220px; }
+  .hero-photo::before { width:120px; }
+  .dust-container { position:absolute; top:0; right:0; width:100%; height:45vw; }
+  .hero-content { padding:32px 24px 60px; max-width:100%; }
+  .scroll-hint { display:none; }
+
+  /* Section 2: Rescue */
+  #empathy { flex-direction:column; align-items:flex-start; }
+  .rescue-photo { position:relative; right:auto; width:100%; height:45vw; min-height:220px; }
+  .section-content { padding:40px 24px 60px; max-width:100%; }
+  .section-number { font-size:70px; top:16px; left:16px; }
+
+  /* Accent strip */
+  .accent-strip { height:200px; }
+  .accent-quote { padding:0 24px; }
+
+  /* Section 3: Defense */
+  #defense { flex-direction:column; align-items:flex-start; }
+  .defense-photo { position:relative; left:auto; width:100%; height:45vw; min-height:220px; }
+  .circuit-overlay { mask-image:none; opacity:0.5; }
+  .defense-content { padding:40px 24px 60px; max-width:100%; margin-left:0; }
+
+  /* Section 4: Future */
+  .future-content { padding:80px 24px 60px; max-width:100%; }
+  .future-sub { max-width:100%; }
+  .cta-btn { padding:16px 24px; font-size:14px; gap:10px; }
+
+  /* Footer */
+  footer { flex-direction:column; gap:10px; padding:30px 24px; text-align:center; }
+}
+
+/* ===== RESPONSIVE: TABLET ===== */
+@media (min-width:769px) and (max-width:1024px) {
+  nav { padding:20px 40px; }
+  .hero-content { padding:0 40px; max-width:480px; }
+  .section-content { padding:60px 40px; max-width:460px; }
+  .defense-content { padding:60px 40px; max-width:460px; }
+  .future-content { padding:0 40px; max-width:520px; }
+  footer { padding:30px 40px; }
+}
 </style>
 </head>
 <body>
